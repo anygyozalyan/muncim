@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation button {
+    border: 0.1rem solid #000;
+    padding: 0.3rem 0.7rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10rem;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navigation .signUpButton {
+    background-color: #99FF91;
+    cursor: pointer;
+}
+
+.mobile_block {
+    display: none;
+}
+
+.navigation button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.navigation .signUpButton.active {
+    background-color: #99FF91;
+    color: #000;
+}
+
+.navigation .signUpButton:hover,
+.mobile_signup:hover {
+    background-color: #88ee7f;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 42.5rem) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .mobile_block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile_block .mobile_signup {
+        border: 0.1rem solid #000;
+        padding: 0.3rem 0.7rem;
+        outline: none;
+        font-size: 1rem;
+        border-radius: 10rem;
+        background-color: #99FF91;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .burger_menu {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 37rem) {
+    .navbar {
+        padding: 1rem;
+    }
+
+}

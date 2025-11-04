@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.whoWorks_section {
+    width: 100%;
+    padding: 2rem 2rem 2rem 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 0.1rem solid #000;
+    font-family: "Roboto", sans-serif;
+}
+
+.whoWork_imageBlock img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.whoWorks_contentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.whoWorks_title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.whoWorks_mainText {
+    font-size: 5rem;
+    max-width: 35rem;
+    line-height: 0.9;
+}
+
+.whoWorks_subtitle {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    max-width: 70%;
+    line-height: normal;
+}
+
+.whoWorks_subtext {
+    max-width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+
+.buttons_block {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.buttons_block button {
+    padding: 0.4rem 1.2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid #000;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.buttons_block .signUp_btn {
+    background-color: #99FF91;
+}
+
+.buttons_block .signUp_btn:hover {
+    background-color: #88ee7f;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+@media(max-width: 64rem) {
+    .whoWorks_section {
+        align-items: center;
+    }
+
+    .whoWorks_mainText {
+        font-size: 4rem;
+        max-width: 25rem;
+    }
+}
+
+@media(max-width: 60.5rem) {
+    .whoWorks_section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .whoWorks_contentBlock {
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+
+    .whoWorks_subtitle,
+    .whoWorks_subtext {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width: 30rem) {
+    .whoWorks_mainText {
+        font-size: 3rem;
+        max-width: 20rem;
+        line-height: 1.1;
+    }
+
+    .whoWorks_title {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .whoWorks_subtext {
+        font-size: 1rem;
+    }
+}
