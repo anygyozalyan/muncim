@@ -2,10 +2,6 @@
 
 **Interactive Job & Career Platform**  
 
-## 🔗 Live Demo
-
-[See the live website here]((https://anygyozalyan.github.io/muncim/))
-
 Muncim is a responsive, interactive web platform that helps job seekers find the best opportunities and assists companies in recruiting efficiently. The project is built with modern frontend technologies and features a smooth user experience.
 
 ---
